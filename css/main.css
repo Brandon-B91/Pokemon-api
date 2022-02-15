@@ -196,14 +196,19 @@ header p {
 
 @media only screen and (max-width: 500px) {
 
-    .weakness-img {
-        height: 3%;
-        width: 3%;
-
-    }
-    
-    .resistance-img {
-        height: 3%;
-        width: 3%;
-    }
+    .move-type-img {
+        justify-self: flex-start;
+        grid-area: type1;
+        margin-left: 5%;
+        height: 15%;
+        width: 15%;
+      }
+      
+      .move-type-img-2 {
+        justify-self: flex-start;
+        grid-area: type2;
+        margin-left: 5%;
+        height: 15%;
+        width: 15%;
+      }
 }
