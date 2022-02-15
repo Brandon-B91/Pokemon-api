@@ -286,9 +286,7 @@ function displayMove2(move) {
 
 function displayWeakness(pokemon) {
     let weakness = document.querySelector('.weakness-img')
-    // weakness.innerText = `Weakness: ${pokemon.damage_relations.double_damage_from[0].name}`
     let resist = document.querySelector('.resistance-img')
-    // resist.innerText = `Resistance ${pokemon.damage_relations.half_damage_from[0].name}`
 
     if(pokemon.damage_relations.double_damage_from[0].name === "bug") {
         weakness.src = "types/bug.svg"

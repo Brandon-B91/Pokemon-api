@@ -177,6 +177,7 @@ header p {
     width: 12%;
     background: black;
     border-radius: 50%;
+    margin-left: 1%;
 }
 
 .resistance-img {
@@ -184,10 +185,29 @@ header p {
     width: 12%;
     background: black;
     border-radius: 50%;
+    margin-left: 1%;
 }
 
 .cite {
     margin: 3% 2%;
     font-size: .8rem;
     text-transform: none;
+}
+
+@media screen and (max-width: 500px) {
+    .weakness-img {
+        height: 3%;
+        width: 3%;
+        background: black;
+        border-radius: 50%;
+        margin-left: 1%;
+    }
+    
+    .resistance-img {
+        height: 3%;
+        width: 3%;
+        background: black;
+        border-radius: 50%;
+        margin-left: 1%;
+    }
 }
