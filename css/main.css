@@ -109,47 +109,29 @@ header p {
 }
 
 .move-set {
-  display: grid;
-  grid-template-areas:
-    "type1 main1 dmg1"
-    "type2 main2 dmg2";
-  grid-template-columns: 1fr, 1fr, 1fr;
-  margin-bottom: 12%;
-  margin-top: 12%;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 6%;
+  margin-top: 6%;
+}
+
+.move1, .move2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
 }
 
 .move-set li {
-  margin: 5% 0 5% 0;
+  margin: 5% 0;
 }
 
 .move-type {
-    height: 45%;
-    width: 45%;
+    height: 7%;
+    width: 7%;
     margin: 0;
     padding: 0;
-}
-
-.move-type-1 {
-  justify-self: flex-start;
-  grid-area: type1;
-  margin-left: 5%;
-}
-
-.move-type-2 {
-  justify-self: flex-start;
-  grid-area: type2;
-  margin-left: 5%;
-}
-
-.move-name-1 {
-  grid-area: main1;
-  justify-self: flex-start;
-}
-
-.move-name-2 {
-  grid-area: main2;
-  justify-self: flex-start;
 }
 
 .weakness {
@@ -192,23 +174,4 @@ header p {
     margin: 3% 2%;
     font-size: .8rem;
     text-transform: none;
-}
-
-@media only screen and (max-width: 500px) {
-
-    .move-type-img {
-        justify-self: flex-start;
-        grid-area: type1;
-        margin-left: 5%;
-        height: 15%;
-        width: 15%;
-      }
-      
-      .move-type-img-2 {
-        justify-self: flex-start;
-        grid-area: type2;
-        margin-left: 5%;
-        height: 15%;
-        width: 15%;
-      }
 }
