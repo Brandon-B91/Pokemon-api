@@ -18,6 +18,7 @@ li {
 }
 
 input {
+  margin-top: 5%;
   width: 100%;
   max-width: 280px;
   padding: 10px 15px;
