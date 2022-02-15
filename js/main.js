@@ -4,6 +4,8 @@ const apiSpecies = "https://pokeapi.co/api/v2/pokemon-species";
 const apiTypes = "https://pokeapi.co/api/v2/type"
 
 const searchBox = document.querySelector(".search-box");
+const search = document.querySelector('.submit')
+search.addEventListener('click', setQuery1)
 searchBox.addEventListener("keypress", setQuery);
 
 function setQuery(e) {
@@ -11,6 +13,11 @@ function setQuery(e) {
     getResults(searchBox.value);
     searchBox.value = "";
   }
+}
+
+function setQuery1() {
+    getResults(searchBox.value)
+    // searchBox.value = ""
 }
 
 function getResults(pokemon) {
