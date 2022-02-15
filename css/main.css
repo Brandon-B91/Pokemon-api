@@ -205,8 +205,5 @@ header p {
     .resistance-img {
         height: 3%;
         width: 3%;
-        background: black;
-        border-radius: 50%;
-        margin-left: 1%;
     }
 }
