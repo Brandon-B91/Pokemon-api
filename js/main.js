@@ -17,7 +17,7 @@ function setQuery(e) {
 
 function setQuery1() {
     getResults(searchBox.value)
-    // searchBox.value = ""
+    searchBox.value = ""
 }
 
 function getResults(pokemon) {
