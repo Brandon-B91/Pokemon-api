@@ -194,13 +194,12 @@ header p {
     text-transform: none;
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
+
     .weakness-img {
         height: 3%;
         width: 3%;
-        background: black;
-        border-radius: 50%;
-        margin-left: 1%;
+
     }
     
     .resistance-img {
