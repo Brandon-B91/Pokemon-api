@@ -10,7 +10,7 @@ searchBox.addEventListener("keypress", setQuery);
 
 function setQuery(e) {
   if (e.keyCode == 13 || e.keyCode == 36) {
-    getResults(searchBox.value);
+    getResults(searchBox.value.toLowerCase());
     searchBox.value = "";
   }
 }
